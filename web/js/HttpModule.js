@@ -1,7 +1,10 @@
-
-function test2(){
+class HttpModule{
+    
+test2(){
   alert('Hello from httpModule');
 }
-export{test2};
+}
+let httpModule = new HttpModule();
+export{httpModule};
 
 
