@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _AuthModule_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AuthModule.js */ \"./web/js/AuthModule.js\");\n/* harmony import */ var _HttpModule_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HttpModule.js */ \"./web/js/HttpModule.js\");\n\n\n\n\nalert('hello from App!');\n_AuthModule_js__WEBPACK_IMPORTED_MODULE_0__[\"authModule\"].test();\n_AuthModule_js__WEBPACK_IMPORTED_MODULE_0__[\"authModule\"].test3();\n_AuthModule_js__WEBPACK_IMPORTED_MODULE_0__[\"authModule\"].test2();\n_HttpModule_js__WEBPACK_IMPORTED_MODULE_1__[\"httpModule\"].test2();\n\n\n//# sourceURL=webpack:///./web/js/App.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _AuthModule_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AuthModule.js */ \"./web/js/AuthModule.js\");\n/* harmony import */ var _HttpModule_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HttpModule.js */ \"./web/js/HttpModule.js\");\n\n\n\n\ndocument.getElementById(\"showLogin\").onclick = function(){\n  toogleMenuActive(\"showLogin\");\n  _AuthModule_js__WEBPACK_IMPORTED_MODULE_0__[\"authModule\"].printLoginForm();\n};\n\nfunction toogleMenuActive(elementId){\n  let activeElement = document.getElementById(elementId);\n  let passiveElements = document.getElementsByClassName(\"nav-item\");\n  for(let i = 0; i < passiveElements.length; i++){\n    if(activeElement === passiveElements[i]){\n      passiveElements[i].classList.add(\"active\");\n    }else{\n      if(passiveElements[i].classList.contains(\"active\")){\n        passiveElements[i].classList.remove(\"active\");\n      }\n    }\n  }\n}\n\n//# sourceURL=webpack:///./web/js/App.js?");
 
 /***/ }),
 
@@ -103,10 +103,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Aut
   !*** ./web/js/AuthModule.js ***!
   \******************************/
 /*! exports provided: authModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"authModule\", function() { return authModule; });\n\nclass AuthModule{\n  test(){\n    alert('Hello from AuthModule.js (test)');  \n  }\n  test3(){\n    alert('Hello from AuthModule.js (test2)');  \n  }\n  test2(){\n      alert('Test2 из AuthModule.js')\n  }\n  test4(){\n      alert('Test4 из AuthModule.js')\n  }\n}\nlet authModule = new AuthModule();\n\n\n\n\n//# sourceURL=webpack:///./web/js/AuthModule.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (25:14)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n|             userModule.addNewUser();\\n|        }\\n>         auth(){\\n|             let login = document.getElementById('login').value;\\n|             let password = document.getElementById('password').value;\");\n\n//# sourceURL=webpack:///./web/js/AuthModule.js?");
 
 /***/ }),
 
@@ -115,10 +114,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
   !*** ./web/js/HttpModule.js ***!
   \******************************/
 /*! exports provided: httpModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"httpModule\", function() { return httpModule; });\nclass HttpModule{\n    \ntest2(){\n  alert('Hello from httpModule');\n}\n}\nlet httpModule = new HttpModule();\n\n\n\n\n\n//# sourceURL=webpack:///./web/js/HttpModule.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (53:27)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n|                 .then(httpModule.status)\\n|                 .then(httpModule.json)\\n>                 .catch(ex) => console.log(\\\"Получена ошибка от сервера: \\\", ex));\\n|     }\\n| }\");\n\n//# sourceURL=webpack:///./web/js/HttpModule.js?");
 
 /***/ })
 
